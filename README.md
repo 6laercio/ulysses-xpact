@@ -17,6 +17,68 @@
 - Página de bloqueio com contador regressivo
 - Interface simples e intuitiva
 
+## 🔧 Instruções de Uso
+
+### Configuração do Ambiente
+
+1. Clone o repositório e navegue até o diretório do projeto
+
+   ```bash
+   git clone https://github.com/6laercio/ulysses-xpact.git
+   cd ulysses-xpact
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Compile o projeto:
+
+   ```bash
+   pnpm run build
+   ```
+
+4. Para desenvolvimento com recompilação automática:
+   ```bash
+   pnpm run dev
+   ```
+
+### Instalação no Chrome
+
+5. Carregar a extensão no Chrome:
+   - Navegue para `chrome://extensions/`
+   - Ative o "Modo do desenvolvedor" (botão no canto superior direito)
+   - Clique em "Carregar sem compactação"
+   - Selecione a pasta `dist` do projeto
+
+### Testando a Extensão
+
+6. **Testando o popup:**
+
+   - Clique no ícone da extensão na barra de ferramentas do Chrome
+   - O popup aparecerá mostrando o domínio atual
+   - Para ver os logs do console ao clicar no botão de bloqueio:
+     - Clique com o botão direito no popup e selecione "Inspecionar"
+     - Vá para a aba "Console" nas ferramentas de desenvolvedor
+
+7. **Testando a página de bloqueio:**
+
+   - Após carregar a extensão, copie o ID da extensão da página `chrome://extensions/`
+   - Acesse diretamente no navegador:
+     ```
+     chrome-extension://SEU_ID_DA_EXTENSAO/block/block.html?site=exemplo.com
+     ```
+   - Você pode substituir "exemplo.com" por qualquer domínio para testar
+
+8. **Visualizando logs do background script:**
+   - Na página `chrome://extensions/`
+   - Localize sua extensão e certifique-se que "Modo do desenvolvedor" está ativado
+   - Procure por um link chamado "service worker" (ou "service worker inativo")
+   - Clique nesse link para abrir as ferramentas de desenvolvedor do service worker
+   - Na aba "Console" você verá todos os logs do background script
+
 ## 📋 Roadmap de Desenvolvimento
 
 ### 1. Configuração Básica
