@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/6laercio/ulysses-xpact/">
-    <img src="https://raw.githubusercontent.com/6laercio/ulysses-xpact/refs/heads/main/icons/icon128.png" alt="Ulysses xPact logo" height="128">
+    <img src="https://raw.githubusercontent.com/6laercio/ulysses-xpact/refs/heads/main/public/icons/icon128.png" alt="Ulysses xPact logo" height="128">
   </a>
 </p>
 
