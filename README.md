@@ -1,8 +1,14 @@
-# Ulysses xPact
+<h1 align="center">Ulysses xPact</h1><br>
 
-## Sobre
+<p align="center">
+  <a href="https://github.com/6laercio/ulysses-xpact/">
+    <img src="https://raw.githubusercontent.com/6laercio/ulysses-xpact/refs/heads/main/icons/icon128.png" alt="Ulysses xPact logo" height="128">
+  </a>
+</p>
 
-Ulysses xPact é uma extensão para o Google Chrome inspirada no mito de Ulisses (Odisseu), que pediu para ser amarrado ao mastro de seu navio para resistir ao canto das sereias. Da mesma forma, esta extensão permite que você "amarre-se ao mastro" bloqueando temporariamente sites distrativos para manter seu foco e produtividade.
+<p align="center">
+  Extensão para Chrome que bloqueia sites distrativos temporariamente para manter seu foco, baseada no <a href="https://en.wikipedia.org/wiki/Ulysses_pact" target="_blank">"Pacto de Ulisses"</a>: criar restrições quando a força de vontade não for suficiente para resistir às distrações.
+</p>
 
 ## 🚀 Principais Funcionalidades
 
@@ -10,10 +16,6 @@ Ulysses xPact é uma extensão para o Google Chrome inspirada no mito de Ulisses
 - Bloqueios temporários (1 hora) para ajudar a manter o foco
 - Página de bloqueio com contador regressivo
 - Interface simples e intuitiva
-
-## 🧠 Filosofia
-
-Baseado no conceito do ["Pacto de Ulisses"](https://en.wikipedia.org/wiki/Ulysses_pact) - a ideia de criar restrições intencionais para seu futuro eu, reconhecendo que a força de vontade momentânea nem sempre é suficiente para resistir às tentações digitais.
 
 ## 📋 Roadmap de Desenvolvimento
 
