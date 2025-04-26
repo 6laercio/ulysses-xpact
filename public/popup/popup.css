@@ -57,3 +57,26 @@ button:hover {
     max-height: 200px;
     overflow-y: auto;
 }
+
+/* Estilo para os itens na lista de sites bloqueados */
+.blocked-site-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #e74c3c;
+}
+
+.blocked-site-item .domain {
+    font-weight: bold;
+    word-break: break-all;
+    max-width: 70%;
+}
+
+.blocked-site-item .remaining-time {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}

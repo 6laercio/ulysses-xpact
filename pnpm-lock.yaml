@@ -15,8 +15,8 @@ importers:
         specifier: ^22.14.1
         version: 22.14.1
       chrome-types:
-        specifier: ^0.1.347
-        version: 0.1.347
+        specifier: ^0.1.348
+        version: 0.1.348
       eslint:
         specifier: ^9.25.1
         version: 9.25.1
@@ -510,8 +510,8 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
-  chrome-types@0.1.347:
-    resolution: {integrity: sha512-c8lbQnYfghYJ8hQ6XivJzex3NJS7RAdcD81uGylnvrRqzF2QMei/wVhsE6+PsZDOipNxbFMxjhf242ZuGhYZzQ==}
+  chrome-types@0.1.348:
+    resolution: {integrity: sha512-7+GhCv+H+EakXgLh3DFoMWX2EAo9sfC3QHXP9zHQ62dPqJHMcjgEV1ihwHzkb6onocnH1JLyf3tC3tHqOpigDQ==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1438,7 +1438,7 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  chrome-types@0.1.347: {}
+  chrome-types@0.1.348: {}
 
   color-convert@2.0.1:
     dependencies:
