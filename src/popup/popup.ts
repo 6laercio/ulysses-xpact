@@ -1,4 +1,4 @@
-import { BlockedSitesState } from '../types/index.js';
+import { BlockedSitesState, Response, BlockedSite } from '../types/index.js';
 
 document.addEventListener('DOMContentLoaded', function (): void {
   // Obter a aba atual
@@ -38,33 +38,41 @@ document.addEventListener('DOMContentLoaded', function (): void {
  * @param duration Duração do bloqueio em milissegundos
  */
 function blockSite(domain: string, duration: number): void {
-  chrome.runtime.sendMessage({ action: 'blockSite', domain, duration }, function (response): void {
-    if (response && response.success) {
-      console.info('Site bloqueado com sucesso:', domain);
+  chrome.runtime.sendMessage(
+    { action: 'blockSite', domain, duration },
+    undefined,
+    function (response: Response<BlockedSite>): void {
+      if (response && response.success) {
+        console.info('Site bloqueado com sucesso:', domain);
 
-      // Atualizar a interface para mostrar o novo site bloqueado
-      loadBlockedSites();
-    } else {
-      console.error('Erro ao bloquear site:', response ? response.error : 'Resposta inválida');
+        // Atualizar a interface para mostrar o novo site bloqueado
+        loadBlockedSites();
+      } else {
+        console.error('Erro ao bloquear site:', response ? response.error : 'Resposta inválida');
+      }
     }
-  });
+  );
 }
 
 /**
  * Carrega e exibe a lista de sites bloqueados
  */
 function loadBlockedSites(): void {
-  chrome.runtime.sendMessage({ action: 'getBlockedSites' }, function (response): void {
-    if (response && response.success) {
-      const blockedSites = response.data as BlockedSitesState;
-      displayBlockedSites(blockedSites);
-    } else {
-      console.error(
-        'Erro ao carregar sites bloqueados:',
-        response ? response.error : 'Resposta inválida'
-      );
+  chrome.runtime.sendMessage(
+    { action: 'getBlockedSites' },
+    undefined,
+    function (response: Response<BlockedSitesState>): void {
+      if (response && response.success) {
+        const blockedSites = response.data as BlockedSitesState;
+        displayBlockedSites(blockedSites);
+      } else {
+        console.error(
+          'Erro ao carregar sites bloqueados:',
+          response ? response.error : 'Resposta inválida'
+        );
+      }
     }
-  });
+  );
 }
 
 /**
