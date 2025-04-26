@@ -90,9 +90,9 @@
 
 ### 2. Sistema de Armazenamento
 
-- [ ] Implementar estrutura de dados para sites bloqueados
-- [ ] Configurar Chrome Storage API
-- [ ] Criar funções para adicionar/remover bloqueios
+- [x] Implementar estrutura de dados para sites bloqueados
+- [x] Configurar Chrome Storage API
+- [x] Criar funções para adicionar/remover bloqueios
 
 ### 3. Mecanismo de Bloqueio
 
